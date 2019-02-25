@@ -1,3 +1,16 @@
+ldb (2:1.2.3-1ubuntu0.1) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: Out of bound read in ldb_wildcard_compare
+    - debian/patches/CVE-2019-3824-1.patch: fix length.
+    - debian/patches/CVE-2019-3824-2.patch: add extra comments.
+    - debian/patches/CVE-2019-3824-3.patch: improve code style.
+    - debian/patches/CVE-2019-3824-4.patch: use talloc_zero.
+    - debian/patches/CVE-2019-3824-5.patch: check tree operation.
+    - debian/patches/CVE-2019-3824-6.patch: fix end of data check.
+    - CVE-2019-3824
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 25 Feb 2019 08:13:32 -0500
+
 ldb (2:1.2.3-1) unstable; urgency=medium
 
   * New upstream version 1.2.3
